@@ -28,15 +28,10 @@ div#beach {
   background-repeat: no-repeat;
 }
 
-div#video {
+div#slide {
   position: absolute;
   right: 243px;
   bottom: 200px;
-}
-
-div#video iframe {
-  width: 255px;
-  height: 155px;
 }
 
 #people {
@@ -469,14 +464,9 @@ div#sea {
     background-size: 2000px;
   }
 
-  div#video {
+  div#slide {
     right: 290px;
-    bottom: 235px;
-  }
-
-  div#video iframe {
-    width: 295px;
-    height: 185px;
+    bottom: 245px;
   }
 
   .moon {

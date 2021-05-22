@@ -269,9 +269,9 @@ window.onload = function () {
     }
     stepClass(step);
     if (step === 3) {
+      reveal();
     }
     if (step === 4) {
-      reveal();
       return;
     }
     setTimeout(openBox, stepMinutes[step - 1]);
@@ -287,19 +287,9 @@ function reveal() {
 
   loop();
 
-  var w, h;
-  if (window.innerWidth >= 1000) {
-    w = 295;h = 185;
-  } else
-  {
-    w = 255;h = 155;
-  }
-
-  var ifrm = document.createElement("iframe");
-  ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
-  //ifrm.style.width = `${w}px`;
-  //ifrm.style.height = `${h}px`;
-  ifrm.style.border = 'none';
-  document.querySelector('#video').appendChild(ifrm);
+  var slide = document.getElementById("slide");
+  slide.style.backgroundImage = "url('https://dl.dropbox.com/s/vt09xnup0x4yifg/slide_1.jpg?dl=2')";
+  slide.style.width = `288px`;
+  slide.style.height = `176px`;
 }
 
