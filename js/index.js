@@ -21,7 +21,7 @@ particles = [],
 // starting hue
 hue = 120,
 // when launching fireworks with a click, too many get launched at once without a limiter, one launch per 5 loop ticks
-limiterTotal = 10,
+limiterTotal = 5,
 limiterTick = 0,
 // this will time the auto launches of fireworks, one launch per 80 loop ticks
 timerTotal = 80,
@@ -252,6 +252,7 @@ function loop() {
 window.onload = function () {
   var merrywrap = document.getElementById("merrywrap");
   var box = merrywrap.getElementsByClassName("giftbox")[0];
+  var music = document.getElementById("music");
   var step = 1;
   var stepMinutes = [2000, 2000, 1000, 1000];
   function init() {
@@ -264,6 +265,7 @@ window.onload = function () {
   function openBox() {
     if (step === 1) {
       box.removeEventListener("click", openBox, false);
+      music.play();
     }
     stepClass(step);
     if (step === 3) {
