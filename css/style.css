@@ -14,7 +14,7 @@ body {
 }
 
 .slider-frame{
-  overflow:hidden;
+  overflow: hidden;
   height: 176px;
   width: 288px;
   opacity: 0;
@@ -70,7 +70,6 @@ canvas#canvas {
 
 div#beach {
   background-image: url(https://dl.dropbox.com/s/0vgmf6kbs62i1hb/beach.png?dl=2);
-  /* background-size: cover; */
   background-position: bottom right;
   background-size: 1700px;
   background-repeat: no-repeat;
@@ -78,8 +77,8 @@ div#beach {
 
 div#slide {
   position: absolute;
-  right: 243px;
-  bottom: 200px;
+  right: 225px;
+  bottom: 190px;
 }
 
 #people {
@@ -208,8 +207,6 @@ div#sea {
 .icons {
   position: absolute;
   left: 10px;
-  /*top:50%;
-  width: 100%;*/
   height: auto;
   transform: translateY(10px) rotate(-20deg);
 }

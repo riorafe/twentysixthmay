@@ -272,6 +272,7 @@ window.onload = function () {
       reveal();
     }
     if (step === 4) {
+      removeUnused();
       return;
     }
     setTimeout(openBox, stepMinutes[step - 1]);
@@ -291,3 +292,6 @@ function reveal() {
   slide.style.opacity = '100';
 }
 
+function removeUnused() {
+  document.getElementById("giftbox").remove();
+}
