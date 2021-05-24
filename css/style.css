@@ -23,15 +23,22 @@ body {
 
 @-webkit-keyframes slide_animation{
   0% {bottom: 0px;}
-  10% {bottom: 0px;}
-  20% {bottom: 176px;}
-  30% {bottom: 176px;}
-  40% {bottom: 352px;}
-  50% {bottom: 352px;}
-  60% {bottom: 176px;}
-  70% {bottom: 176px;}
-  80% {bottom: 0px;}
-  90% {bottom: 0px;}
+  6% {bottom: 0px;}
+  12% {bottom: 176px;}
+  18% {bottom: 176px;}
+  24% {bottom: 352px;}
+  30% {bottom: 352px;}
+  36% {bottom: 528px;}
+  42% {bottom: 528px;}
+  48% {bottom: 704px;}
+  54% {bottom: 704px;}
+  60% {bottom: 528px;}
+  66% {bottom: 528px;}
+  72% {bottom: 352px;}
+  78% {bottom: 352px;}
+  84% {bottom: 176px;}
+  90% {bottom: 176px;}
+  96% {bottom: 0px;}
   100% {bottom: 0px;}
 }
 
