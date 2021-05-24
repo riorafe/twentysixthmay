@@ -5,10 +5,52 @@ html, body, .container {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   background: #e74;
   overflow: hidden;
   background-image: linear-gradient(to bottom, #190e14, #0d0d4b 30%, #c76075 80%, #e9b64b 95%);
   background-image: radial-gradient(circle at center bottom, #e9b64b, #c76075 15%, #0d0d4b 75%, #190e14 90%);
+}
+
+.slider-frame{
+  overflow:hidden;
+  height: 176px;
+  width: 288px;
+  opacity: 0;
+  
+}
+
+@-webkit-keyframes slide_animation{
+  0% {bottom: 0px;}
+  10% {bottom: 0px;}
+  20% {bottom: 176px;}
+  30% {bottom: 176px;}
+  40% {bottom: 352px;}
+  50% {bottom: 352px;}
+  60% {bottom: 176px;}
+  70% {bottom: 176px;}
+  80% {bottom: 0px;}
+  90% {bottom: 0px;}
+  100% {bottom: 0px;}
+}
+
+.slider-images{
+  width: 432px;
+  height: 117px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+
+.img-container{
+  /* height: 117px; */
+  width: 288px;
+  position: relative;
+  float: left;
 }
 
 div#beach,
@@ -473,4 +515,3 @@ div#sea {
     right: 230px;
   }
 }
-

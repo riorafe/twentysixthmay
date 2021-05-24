@@ -288,8 +288,6 @@ function reveal() {
   loop();
 
   var slide = document.getElementById("slide");
-  slide.style.backgroundImage = "url('https://dl.dropbox.com/s/vt09xnup0x4yifg/slide_1.jpg?dl=2')";
-  slide.style.width = `288px`;
-  slide.style.height = `176px`;
+  slide.style.opacity = '100';
 }
 
